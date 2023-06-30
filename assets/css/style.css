@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 20px;
+    color: #003a6e;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.logo img {
+    height: 60px;
+}
+.logo p {
+    margin-top: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container {
+    margin-top: 60px;
+    border: 1px solid #003a6e;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 1px rgba(20, 43, 106, 0.64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_container h1 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.lbl_head {
+    font-weight: 500;
+    font-size: 18px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    border-bottom: 1px solid #2e7bbf;
+    padding-bottom: 20px;
+}
+.tool_label {
+    font-size: 14px;
+    color: #999;
+    text-align: end;
+    width: 96%;
+    margin-top: 6px;
+}
+
+.lbl_head input {
+    border-radius: 15px;
+    height: 40px;
+    border: 1px solid #003a6e;
+    padding: 5px 10px;
+    transition: 0.2s ease-in-out;
+}
+.lbl_head input:focus {
+    border: 1px solid #1685e8;
+    box-shadow: 0 0 4px 1px #1685e8;
+    outline: 0;
+}
+.lbl_head input:active {
+    box-shadow: 0 0 4px 1px #1685e8;
+}
+
+.btn_form {
+    width: 60%;
+    height: 56px;
+    margin-top: 20px;
+    border: none;
+    background: #003a6e;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Montserrat;
+    transition: 0.2s ease-in-out;
+}
+.btn_form:hover {
+    background: #1685e8;
+    box-shadow: 0 0 4px 1px #1685e8;
+}
+
+.orders_wrapper {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 60px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 15px 15px 0px 0px;
+    padding: 20px 30px;
+    text-align: center;
+}
+.head {
+    font-weight: bold;
+}
+.orders_items {
+    list-style-type: none;
+}
+.order_view {
+    display: flex;
+}
+.order_view div {
+    border-right: 1px solid #000;
+}
+.order_view div:last-child{
+    border: none;
+}
+.order-atrb {
+    width: 50%;
+}
+.order_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px #003a6e;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/****форма-валидация****/
+.name_input:not(:placeholder-shown):invalid  {
+    box-shadow: 0 0 4px 2px red;
+}
+.name_input:valid{
+    box-shadow: 0 0 4px 2px #21e304;
+}
+.email_input:not(:placeholder-shown):invalid  {
+    box-shadow: 0 0 4px 2px red;
+}
+.email_input:valid{
+    box-shadow: 0 0 4px 2px #21e304;
+}
+.tel_input:not(:placeholder-shown):invalid  {
+    box-shadow: 0 0 4px 2px red;
+}
+.tel_input:valid{
+    box-shadow: 0 0 4px 2px #21e304;
+}
+.number_input:not(:placeholder-shown):invalid  {
+    box-shadow: 0 0 4px 2px red;
+}
+.number_input:valid{
+    box-shadow: 0 0 4px 2px #21e304;
+}
